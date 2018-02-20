@@ -1,0 +1,20 @@
+
+@import "_variables.scss";
+// Fonts
+
+$body: 'source sans pro', Helvetica, sans-serif;
+
+h1, h2, h3, h4 {
+  margin: 1rem;
+  color: $blue;
+
+}
+
+p {
+  margin:  0;
+
+}
+h3 {
+  display: inline-block;
+  border-bottom: 1px solid $grey;
+}

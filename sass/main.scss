@@ -1,0 +1,57 @@
+// Base
+
+@import "base/breakpoints.scss";
+@import "base/typography.scss";
+@import "base/variables.scss";
+@import "base/normalize.scss";
+
+ // Layout
+
+@import "layout/header.scss";
+@import "layout/hero.scss";
+@import "layout/content.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";
+
+// Core styles
+
+html {
+
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+
+
+}
+
+body {
+  background-color: $grey;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $body;
+  text-align: center;
+  position: relative;
+  line-height: 2;
+}
+
+ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+
+
+}
+
+li {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+
+}
