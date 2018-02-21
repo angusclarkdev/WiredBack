@@ -3,17 +3,6 @@
   border-top: 1px solid rgba(128, 128, 128, 0.4);
   background-color: white;
 
-
-}
-
-#Hero {
-  background-image: url("/images/londoncab.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 40vh;
-  margin-top: 3rem;
-  border-top: none;
 }
 
 .button {
@@ -36,7 +25,11 @@
   margin: 0;
 
 }
-
+#A {
+  .box_right {
+    grid-column: 3/4;
+  }
+}
 #D {
   ul {
     -webkit-padding-start: 40px;
@@ -51,20 +44,3 @@
     text-align: left;
     }
   }
-
-/*#B {
-
-  background-image: url("/images/horizon.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
-
-}
-
-
-*/
-#Contact {
-  display: none;
-}

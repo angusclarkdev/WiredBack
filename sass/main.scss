@@ -1,6 +1,6 @@
 // Base
 
-@import "base/breakpoints.scss";
+
 @import "base/typography.scss";
 @import "base/variables.scss";
 @import "base/normalize.scss";
@@ -25,14 +25,14 @@ html {
   overflow-x: hidden;
   box-sizing: border-box;
 
-
-
 }
 
 body {
   background-color: $grey;
+  color: $black;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: $body;
   text-align: center;
   position: relative;
@@ -48,14 +48,23 @@ ul {
 
 
 }
-
+nav {
+  margin: 0;
+}
 li {
   margin: 0;
   list-style: none;
   display: inline-block;
 
 }
+a {
+
+  color: inherit;
+}
 .image {
   width: 95%;
   padding-bottom: 1rem;
 }
+
+// Breakpoints
+@import "base/breakpoints.scss";

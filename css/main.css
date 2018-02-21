@@ -384,7 +384,7 @@ template {
   height: 3rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99.5%;
   background-color: #DEDEDE;
   border-bottom: 1px solid rgba(128, 128, 128, 0.4);
   margin: 0 0.2rem 0 0.2rem;
@@ -397,23 +397,24 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: inherit; }
+    margin: inherit;
+    width: inherit; }
   #Header ul {
     text-align: right;
     margin: inherit; }
+    #Header ul a {
+      text-decoration: none; }
+      #Header ul a.hidden_li {
+        display: none; }
   #Header i {
     color: white;
     text-shadow: 0px 1px 1px black; }
   #Header li {
     height: 100%;
     display: inline-block;
-    padding: 0 0.3rem 0 0.3rem;
-    background-color: #F2BE00; }
-
-.main {
-  margin: 0 0.2rem 0 0.2rem;
-  border-top: 1px solid rgba(128, 128, 128, 0.4);
-  background-color: white; }
+    padding: 0 0.3rem 0 0.3rem; }
+    #Header li.nav_icon {
+      background-color: #F2BE00; }
 
 #Hero {
   background-image: url("/images/londoncab.jpg");
@@ -423,6 +424,11 @@ template {
   min-height: 40vh;
   margin-top: 3rem;
   border-top: none; }
+
+.main {
+  margin: 0 0.2rem 0 0.2rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  background-color: white; }
 
 .button {
   display: none; }
@@ -439,6 +445,9 @@ template {
   padding: 0 1.3rem 1rem 1.3rem;
   margin: 0; }
 
+#A .box_right {
+  grid-column: 3/4; }
+
 #D ul {
   -webkit-padding-start: 40px;
   padding-bottom: 1rem; }
@@ -448,22 +457,6 @@ template {
   list-style: disc;
   display: list-item;
   text-align: left; }
-
-/*#B {
-
-  background-image: url("/images/horizon.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
-
-}
-
-
-*/
-#Contact {
-  display: none; }
 
 #Footer p {
   text-align: center;
@@ -493,8 +486,10 @@ html {
 
 body {
   background-color: #DEDEDE;
+  color: #111;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: "source sans pro", Helvetica, sans-serif;
   text-align: center;
   position: relative;
@@ -507,13 +502,59 @@ ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
+nav {
+  margin: 0; }
+
 li {
   margin: 0;
   list-style: none;
   display: inline-block; }
 
+a {
+  color: inherit; }
+
 .image {
   width: 95%;
   padding-bottom: 1rem; }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px; } }
+@media screen and (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; }
+
+  .image {
+    display: none; }
+
+  .box {
+    background-color: white;
+    height: 400px;
+    align-self: center; }
+
+  .main {
+    min-height: 95vh; }
+
+  #Hero {
+    min-height: 95vh; }
+
+  #Header {
+    font-size: 1.2rem; }
+    #Header ul a:nth-child(-n + 2) {
+      float: left;
+      margin-right: 5px;
+      font-size: 1.4rem; }
+    #Header ul a:nth-child(-n+6) {
+      display: inline-block; }
+    #Header .nav_icon {
+      padding: 0 0.3rem 0 0.3rem; }
+
+  #A {
+    background: url("/images/bridge.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=main.css.map */

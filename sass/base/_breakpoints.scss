@@ -1,0 +1,52 @@
+
+//small screens
+@media screen and (min-width: 768px) {
+
+    html {
+      font-size: 18px;
+    }
+}
+
+// Medium screens
+@media screen and (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    //grid-template-areas:
+  }
+  .image {
+    display: none;
+  }
+  .box {
+    background-color: white;
+    height: 400px;
+    align-self: center;
+  }
+  .main {
+    min-height: 95vh;
+  }
+  #Hero {
+    min-height: 95vh;
+  }
+  #Header {
+    font-size: 1.2rem;
+    ul a:nth-child(-n + 2) {
+      float: left;
+      margin-right: 5px;
+      font-size: 1.4rem;
+  }
+  ul a:nth-child(-n+6) {
+    display: inline-block;
+  }
+  .nav_icon {
+    padding: 0 0.3rem 0 0.3rem;
+  }
+}
+#A {
+  background: url("/images/bridge.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
