@@ -29,14 +29,15 @@ html {
 
 body {
   background-color: $grey;
-  color: $black;
+  color: $light-black; //$black;
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: $body;
+  font-weight: 300;
   text-align: center;
   position: relative;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 ul {

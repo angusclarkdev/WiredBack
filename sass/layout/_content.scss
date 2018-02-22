@@ -9,27 +9,32 @@
   display: none;
 }
 
-.expand_content {
+.expand_button {
   display: none;
+  background-color: $button-grey;
+  border-radius: 2px;
+  width: 150px;
+  margin-left: 1.3rem;
+
+
 }
 
 .box {
-  height: inherit;
+
   position: relative;
+  background-color: white;
 
-
+}
+.box_center {
+  grid-column: 2/3;
 }
 .content {
   text-align: justify;
   padding: 0 1.3rem 1rem 1.3rem;
-  margin: 0;
+
 
 }
-#A {
-  .box_right {
-    grid-column: 3/4;
-  }
-}
+
 #D {
   ul {
     -webkit-padding-start: 40px;
