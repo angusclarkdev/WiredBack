@@ -438,8 +438,11 @@ template {
   display: none;
   background-color: #f2f2f2;
   border-radius: 2px;
-  width: 150px;
-  margin-left: 1.3rem; }
+  width: 100px;
+  margin-left: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.4rem; }
 
 .box {
   position: relative;
@@ -565,30 +568,35 @@ a {
     height: calc(100vh - 3rem); }
 
   #Header {
-    font-size: 1.2rem; }
+    font-size: 1.1rem;
+    background-color: white; }
     #Header ul a:nth-child(-n + 2) {
       float: left;
       margin-right: 5px;
       font-size: 1.4rem; }
-    #Header ul a:nth-child(-n+6) {
-      display: inline-block; }
+    #Header ul a:nth-child(n+3) {
+      display: inline-block;
+      padding: 0.2rem 0.5rem 0 0.5rem; }
     #Header .nav_icon {
       padding: 0 0.3rem 0 0.3rem; }
 
   #A {
-    background-image: url("/images/ggate.jpg"); }
+    background-image: url("/images/bridge.jpg"); }
 
   #B {
-    background-image: url("/images/horizon.jpg"); }
+    background-image: url("/images/ocean.jpg"); }
 
   #C {
     background-image: url("/images/phone.jpg"); }
 
   #D {
     background-image: url("/images/tanker.jpg");
-    background-position: left; }
+    background-position: center; }
 
   #Contact {
     background-color: purple; } }
+@media screen and (min-width: 992px) {
+  .box {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
