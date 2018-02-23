@@ -407,6 +407,8 @@ template {
       text-decoration: none; }
       #Header ul a.hidden_li {
         display: none; }
+        #Header ul a.hidden_li :hover {
+          color: #1A4A9B; }
   #Header i {
     color: white;
     text-shadow: 0px 1px 1px black; }
@@ -418,7 +420,7 @@ template {
       background-color: #F2BE00; }
 
 #Hero {
-  background-image: url("/images/londoncab.jpg");
+  background-image: url("/images/londoncab3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -440,9 +442,11 @@ template {
   border-radius: 2px;
   width: 100px;
   margin-left: 1.3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  padding: 0.4rem; }
+  padding: 0.5rem;
+  cursor: pointer; }
 
 .box {
   position: relative;
@@ -532,7 +536,7 @@ a {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-rows: 1fr minmax(500px, 1fr) 1fr; }
 
   .image {
     display: none; }
@@ -540,7 +544,8 @@ a {
   .box {
     grid-row: 2/3;
     align-self: center;
-    width: 75%; }
+    width: 50%;
+    padding: 1.6rem 1.6rem 2rem 1.6rem; }
 
   .main {
     height: calc(100vh - 3rem);
@@ -560,6 +565,7 @@ a {
     justify-self: left; }
 
   h3 {
+    font-size: 2.5rem;
     text-align: left;
     display: block;
     border-bottom: none; }
@@ -568,12 +574,10 @@ a {
     height: calc(100vh - 3rem); }
 
   #Header {
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: white; }
     #Header ul a:nth-child(-n + 2) {
-      float: left;
-      margin-right: 5px;
-      font-size: 1.4rem; }
+      display: none; }
     #Header ul a:nth-child(n+3) {
       display: inline-block;
       padding: 0.2rem 0.5rem 0 0.5rem; }
@@ -595,8 +599,11 @@ a {
 
   #Contact {
     background-color: purple; } }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.1rem; }
+
   .box {
-    width: 50%; } }
+    width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */

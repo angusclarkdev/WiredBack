@@ -12,7 +12,7 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr minmax(500px, 1fr) 1fr;
 
     }
     .image {
@@ -21,7 +21,8 @@
     .box {
       grid-row: 2/3;
       align-self: center;
-      width: 75%;
+      width: 50%;
+      padding: 1.6rem 1.6rem 2rem 1.6rem;
 
 
     }
@@ -43,22 +44,22 @@
       justify-self: left;
     }
     h3 {
+      font-size: 2.5rem;
       text-align: left;
       display: block;
       border-bottom: none;
     }
+
     #Hero {
       height: calc(100vh - 3rem);
     }
     #Header {
-        font-size: 1.1rem;
+        font-size: 1rem;
         background-color: white;
 
 
       ul a:nth-child(-n + 2) {
-        float: left;
-        margin-right: 5px;
-        font-size: 1.4rem;
+        display: none;
     }
     ul a:nth-child(n+3) {
       display: inline-block;
@@ -66,9 +67,6 @@
 
 
     }
-
-
-
     .nav_icon {
       padding: 0 0.3rem 0 0.3rem;
     }
@@ -91,9 +89,13 @@
     background-color: purple;
   }
   }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
+      p {
+        font-size: 1.1rem;
+      }
 
       .box {
-        width: 50%;
+        width: 60%;
+
       }
     }

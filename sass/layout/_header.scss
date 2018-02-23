@@ -27,8 +27,12 @@
 
   a {
     text-decoration: none;
+
     &.hidden_li {
       display: none;
+      :hover {
+        color: $blue;
+      }
     }
   }
   }
