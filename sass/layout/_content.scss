@@ -2,6 +2,7 @@
   margin: 0 0.2rem 0 0.2rem;
   border-top: 1px solid rgba(128, 128, 128, 0.4);
   background-color: white;
+  box-sizing: border-box;
 
 }
 
@@ -20,25 +21,9 @@
   text-align: center;
   padding: 0.5rem;
   cursor: pointer;
-
-
 }
 
-.box {
 
-  position: relative;
-  background-color: white;
-
-}
-.box_center {
-  grid-column: 2/3;
-}
-.content {
-  text-align: justify;
-  padding: 0 1.3rem 1rem 1.3rem;
-
-
-}
 
 #D {
   ul {

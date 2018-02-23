@@ -1,0 +1,26 @@
+.box {
+
+  position: relative;
+  background-color: white;
+  transform: translateX(50%);
+  transition: all 0.7s ease;
+}
+.transform_x {
+transform: translateX(0%);
+}
+
+.box_center {
+  grid-column: 2/3;
+}
+.box_clicked {
+
+}
+.content {
+  text-align: justify;
+  padding: 0 2.6rem 1rem 1.3rem;
+}
+
+.content_right {
+text-align: justify;
+padding: 0 1.3rem 1rem 1.3rem;
+}
