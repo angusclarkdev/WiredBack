@@ -1,7 +1,21 @@
-$('#button').click(function(event) {
-  $('#box').toggleClass('transform_x');
+let box = $('.box');
+let arrow = $('.expand_arrow');
+arrow.hover(function() {
+  box.addClass('transform_x');
+  arrow.addClass('opacity');
 });
 
-$('#A').scroll(function(event) {
-  $('#box').toggleClass('transform_x');
+box.mouseleave(function(event) {
+  if (box.hasClass('transform_x')) {
+    box.toggleClass('transform_x')
+    arrow.removeClass('opacity')
+  }
 });
+/*function() {
+
+});
+/*(function(event) {
+
+  moreLess()
+  bg_mustard()
+});*/

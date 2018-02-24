@@ -1,9 +1,12 @@
 #Hero {
-  background-image: url("/images/londoncab3.png");
+  background-image: url("/images/londoncab.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40vh;
   margin-top: 3rem;
   border-top: none;
-}
+  .kicker {
+    display: none;
+  }
+  }
