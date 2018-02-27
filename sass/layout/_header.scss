@@ -30,9 +30,13 @@
 
     &.hidden_li {
       display: none;
-      :hover {
+      /*:hover {
         color: $blue;
-      }
+      }*/
+
+    }
+    :active {
+      color: $blue;
     }
   }
   }

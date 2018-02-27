@@ -42,5 +42,16 @@ $(document).ready(function() {
       $('#box_right1').removeClass('transform_x');
       leftArrow.removeClass('opacity')
     });
+
+    // Smooth Scrolling
+
+    let scrollLink = $('.scroll');
+
+    scrollLink.click(function(event) {
+      event.preventDefault();
+      $('body,html').animate({
+        scrollTop: $(this.hash).offset().top - 54
+      }, 1000)
+    });
   })();
 });

@@ -1,8 +1,8 @@
-1. Change Hero to old style with subtitle (done)
-2. Change arrow on hover JS (done)
-3. add second box new Horizons (done)
-4. add functionality for Horizons
-4. Add arrow in Connectivity
-5. add arrow and translateX to Future
-6. Disable box shadow on mobile
-7. About box not central?
+1. Create down arrow on Sections (done)
+2. Create circle arrow on Hero (done)
+3. Animate scroll when nav links clicked (done)
+4. Change color of Navlinks when active
+5. Animate Scroll when down buttons clicked
+6. Fix box alignment issue
+7. Style contact form
+8. Change scroll speed for both button types 

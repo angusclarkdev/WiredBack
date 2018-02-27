@@ -1,0 +1,26 @@
+#Contact {
+  h3 {
+    text-align: center;
+  }
+}
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  outline: none;
+  cursor: text;
+  border: 2px solid #ddd;
+  display: block;
+  margin-bottom: 30px;
+  /*border-top: none;
+  border-left: none;
+  border-right: none; */
+  width: 90%;
+  height: 3rem;
+}
