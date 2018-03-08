@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $('.main').scrollex({
       mode: 'middle',
-      delay: 50,
+      delay: 300,
       initialize: function() {
         $(this).addClass('inactive');
       },
@@ -45,13 +45,26 @@ $(document).ready(function() {
 
     // Smooth Scrolling
 
-    let scrollLink = $('.scroll');
+    let scroll = $('.scroll');
+    let scrollSlow = $('.scroll_slow');
 
-    scrollLink.click(function(event) {
+    scroll.click(function(event) {
       event.preventDefault();
       $('body,html').animate({
         scrollTop: $(this.hash).offset().top - 54
       }, 1000)
     });
+
+
+    scrollSlow.click(function(event) {
+      event.preventDefault();
+      $('body,html').animate({
+        scrollTop: $(this.hash).offset().top - 54
+      }, 2000)
+    });
+
+    // Highlight active nav link when clicked
+
+
   })();
 });

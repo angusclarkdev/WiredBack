@@ -15,6 +15,7 @@
   }
 }
 .down_arrow {
+  display: none;
   grid-column: 2/3;
   align-self: flex-end;
   justify-self: center;
@@ -34,9 +35,10 @@
 }
 
 .round_arrow {
+  grid-row: 1;
   height: 100px;
   width: 100px;
   border-radius: 50px;
-  align-self: center;
+  align-self: flex-end;
   border: 2px solid #e5e6e7;
 }

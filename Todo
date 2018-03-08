@@ -1,8 +1,15 @@
-1. Create down arrow on Sections (done)
-2. Create circle arrow on Hero (done)
-3. Animate scroll when nav links clicked (done)
-4. Change color of Navlinks when active
-5. Animate Scroll when down buttons clicked
-6. Fix box alignment issue
-7. Style contact form
-8. Change scroll speed for both button types 
+Master:
+
+1. change style of left box (done)
+2. Add background images for remaining sections (done)
+3. Style footer vertically (done)
+4. Get contact form functioning
+
+
+New branch:
+
+1. Delete "right1" div (done)
+2. Delete expansion arrow (done)
+3. adjust padding for panels (done)
+4. adjust "message" placeholder padding (done)
+5.
