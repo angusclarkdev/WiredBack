@@ -4,7 +4,8 @@ h1, h2, h3, h4 {
   color: #1A4A9B; }
 
 p {
-  margin: 0; }
+  margin: 0;
+  text-align: justify; }
 
 h2 {
   font-size: 1.4rem;
@@ -528,11 +529,6 @@ textarea {
   text-align: justify;
   padding: 0 1.3rem 1rem 1.3rem; }
 
-.content_right {
-  display: none;
-  text-align: justify;
-  padding: 0 1.3rem 1rem 1.3rem; }
-
 .expand_arrow {
   display: none;
   font-size: 3rem;
@@ -671,7 +667,7 @@ a {
     padding: 0 2.9rem 2rem 1.3rem; }
 
   .content_right {
-    display: block; }
+    grid-column: 2; }
 
   .expand_arrow {
     display: inline-block; }
