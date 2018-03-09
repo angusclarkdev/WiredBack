@@ -63,7 +63,49 @@ $(document).ready(function() {
       }, 2000)
     });
 
-    // Highlight active nav link when clicked
+
+    // Split P elememt
+
+    /*
+          let p = document.getElementById('text');
+          let textNode = p.firstChild;
+          let newNode = textNode.splitText(383);
+
+
+
+          function newPara() {
+          let newEl = $('#text').after('<p>');
+          console.log(newNode);
+
+    };
+    newPara();
+    function moveText() {
+
+
+    };
+            moveText();
+
+
+    */
+
+    // Split and append element
+
+    function newElements() {
+
+      let paragraph = document.getElementsByClassName('box');
+
+      for (var i = 0; i < paragraph.length; i++) {
+        paragraph[i]
+        let el = document.createElement('p');
+        paragraph[i].appendChild(el)
+      };
+
+    };
+    newElements();
+
+
+
+
 
 
   })();

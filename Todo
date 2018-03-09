@@ -1,15 +1,12 @@
 Master:
 
-1. change style of left box (done)
-2. Add background images for remaining sections (done)
-3. Style footer vertically (done)
-4. Get contact form functioning
+1. Optomize images
+2. hide text when mobile
+3. center contact form when mobile
+4. Add browser prefixes for grid
 
+Branch:
 
-New branch:
-
-1. Delete "right1" div (done)
-2. Delete expansion arrow (done)
-3. adjust padding for panels (done)
-4. adjust "message" placeholder padding (done)
-5.
+1. change paragraph layout and adapt via JS
+  - collapse text into one P tag
+  - split p tag at min width with JS 

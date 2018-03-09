@@ -528,11 +528,6 @@ textarea {
   text-align: justify;
   padding: 0 1.3rem 1rem 1.3rem; }
 
-.content_right {
-  display: none;
-  text-align: justify;
-  padding: 0 1.3rem 1rem 1.3rem; }
-
 .expand_arrow {
   display: none;
   font-size: 3rem;
