@@ -451,6 +451,11 @@ template {
   display: list-item;
   text-align: left; }
 
+span {
+  text-align: justify;
+  font-size: inherit;
+  padding: 0 2.9rem 2rem 1.3rem; }
+
 #Contact h3 {
   text-align: center; }
 #Contact a {
@@ -636,6 +641,10 @@ a {
     display: none; }
 
   .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/4;
+    width: 80%;
     align-self: center;
     padding: 1.6rem 1.6rem 1.6rem 1.6rem;
     box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2); }
@@ -675,18 +684,7 @@ a {
     display: block; }
 
   .box_right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/4;
-    width: 80%;
     justify-self: right; }
-
-  .box_left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/4;
-    justify-self: left;
-    width: 80%; }
 
   h3 {
     font-size: 2.5rem;
@@ -759,7 +757,7 @@ a {
   #Footer a, #Footer p {
     margin: 0; } }
 @media screen and (min-width: 1200px) {
-  p {
+  p, span {
     font-size: 1.1rem; }
 
   li {

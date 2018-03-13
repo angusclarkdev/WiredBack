@@ -9,4 +9,11 @@ Branch:
 
 1. change paragraph layout and adapt via JS
   - collapse text into one P tag
-  - split p tag at min width with JS 
+  - split p tag at min width with JS
+
+Plan:
+
+1. write function to extract the span element
+2. then append span to end of div
+
+1. 

@@ -22,7 +22,6 @@ $(document).ready(function() {
     let rightArrow = $('.right_arrow');
     let leftArrow = $('.left_arrow')
 
-
     rightArrow.hover(function() {
       $(this).addClass('opacity')
       $('.box_right').addClass('transform_x');
@@ -55,7 +54,6 @@ $(document).ready(function() {
       }, 1000)
     });
 
-
     scrollSlow.click(function(event) {
       event.preventDefault();
       $('body,html').animate({
@@ -63,50 +61,18 @@ $(document).ready(function() {
       }, 2000)
     });
 
+    // Extract span and inner contents
 
-    // Split P elememt
+    function appendSpan(spanNode) {
 
-    /*
-          let p = document.getElementById('text');
-          let textNode = p.firstChild;
-          let newNode = textNode.splitText(383);
+      var span = document.querySelectorAll('span');
+      var parent = span[spanNode].parentNode;
+      parent.parentNode.appendChild(span[spanNode]);
 
-
-
-          function newPara() {
-          let newEl = $('#text').after('<p>');
-          console.log(newNode);
-
-    };
-    newPara();
-    function moveText() {
-
-
-    };
-            moveText();
-
-
-    */
-
-    // Split and append element
-
-    function newElements() {
-
-      let paragraph = document.getElementsByClassName('box');
-
-      for (var i = 0; i < paragraph.length; i++) {
-        paragraph[i]
-        let el = document.createElement('p');
-        paragraph[i].appendChild(el)
-      };
-
-    };
-    newElements();
-
-
-
-
-
+    }
+    appendSpan(0); // Call appendSpan for each section
+    appendSpan(1);
+    appendSpan(2);
 
   })();
 });
