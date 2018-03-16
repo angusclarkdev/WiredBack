@@ -6,7 +6,16 @@
   min-height: 40vh;
   margin-top: 3rem;
   border-top: none;
-  .kicker {
-    display: none;
+  position: relative;
+
+
+    .kicker {
+       display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    text-shadow: 3px 2px 1px black;
+    }
   }
-}

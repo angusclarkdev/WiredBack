@@ -28,7 +28,7 @@ $emailBody = "Name: $name.\n".
 
                   "Message: $message.\n".;
 
-$mailTo = "dingus_clark_@hotmail.co.uk";
+$mailTo = "support@wiredback.com";
 
 $header = "From: $mailFrom";
 

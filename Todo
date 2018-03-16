@@ -1,10 +1,6 @@
 
-<<<<<<< HEAD
-3. center contact form when mobile
-4. Add browser prefixes for grid
-=======
-1. Optomize images
-2. hide text when mobile
-3. center contact form when mobile
-4. Add browser prefixes for grid 
->>>>>>> master
+1. Change fonts for resize (done)
+2. Add favicon for testing(done)
+3. fix kicker position and sizing (done)
+4. strip down 'new horizon text'
+5. fix footer

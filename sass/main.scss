@@ -32,7 +32,7 @@ html {
 
 body {
   background-color: $grey;
-  color: $light-black; //$black;
+  color: $light-black;
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -71,4 +71,5 @@ a {
 }
 
 // Breakpoints
+
 @import "base/breakpoints.scss";
