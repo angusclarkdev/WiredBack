@@ -61,18 +61,5 @@ $(document).ready(function() {
       }, 2000)
     });
 
-    // Extract span and inner contents
-
-    function appendSpan(spanNode) {
-
-      var span = document.querySelectorAll('span');
-      var parent = span[spanNode].parentNode;
-      parent.parentNode.appendChild(span[spanNode]);
-
-    }
-    appendSpan(0); // Call appendSpan for each section
-    appendSpan(1);
-    appendSpan(2);
-
-  })();
+  }());
 });
