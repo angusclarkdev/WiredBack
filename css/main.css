@@ -729,21 +729,21 @@ a {
       padding: 0 0.3rem 0 0.3rem; }
 
   #A {
-    background-image: url("/images/bridge.jpg"); }
+    background-image: url("https://github.com/angusclarkdev/WiredBack/tree/gh-pages/images/bridge.jpg"); }
 
   #B {
-    background-image: url("/images/ocean.jpg"); }
+    background-image: url("https://github.com/angusclarkdev/WiredBack/tree/gh-pages/images/ocean.jpg"); }
 
   #C {
-    background-image: url("/images/phone.jpg"); }
+    background-image: url("https://github.com/angusclarkdev/WiredBack/tree/gh-pages/images/phone.jpg"); }
 
   #D {
-    background-image: url("/images/boat.jpg");
+    background-image: url("https://github.com/angusclarkdev/WiredBack/tree/gh-pages/images/boat.jpg");
     background-position: center;
     background-color: #DEDEDE; }
 
   #E {
-    background-image: url("/images/skyscraper.jpg");
+    background-image: url("https://github.com/angusclarkdev/WiredBack/tree/gh-pages/images/skyscraper.jpg");
     background-position: center; }
 
   #Contact {
