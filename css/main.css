@@ -433,6 +433,7 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40vh;
+  margin-top: 3rem;
   border-top: none;
   position: relative; }
   #Hero .kicker {
@@ -605,7 +606,7 @@ html {
 
 body {
   background-color: #DEDEDE;
-  color: #39454b;
+  color: rgba(17, 17, 17, 0.7);
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -708,7 +709,8 @@ a {
       text-align: center; }
 
   #Hero {
-    height: calc(100vh); }
+    height: calc(100vh);
+    margin-top: 0; }
     #Hero .kicker {
       align-self: center;
       padding-top: 8rem;
@@ -716,6 +718,7 @@ a {
       grid-column: 1/4; }
 
   #Header {
+    display: none;
     font-size: 1rem;
     background-color: white;
     width: 100%;
