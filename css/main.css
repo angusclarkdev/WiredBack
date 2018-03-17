@@ -433,7 +433,6 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40vh;
-  margin-top: 3rem;
   border-top: none;
   position: relative; }
   #Hero .kicker {
@@ -508,7 +507,8 @@ textarea {
 
 #Footer p {
   margin: 1rem 0 1rem 0;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  text-align: center; }
 #Footer a {
   display: block;
   margin: 1rem;
@@ -532,8 +532,7 @@ textarea {
 .box_center {
   grid-row: 1/-1;
   justify-self: center;
-  grid-column: 1/-1;
-  width: 50%; }
+  grid-column: 1/-1; }
 
 .transform_x {
   transform: translateX(0%) !important; }
@@ -584,6 +583,7 @@ textarea {
   width: 120px;
   height: 40px;
   border: none;
+  margin-bottom: 1rem;
   border-radius: 3px;
   background-color: #F5F5F5;
   font-size: inherit;
@@ -609,8 +609,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "source sans pro", Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: "source sans pro", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   text-align: center;
   position: relative;
   line-height: 1.8; }
@@ -660,7 +660,7 @@ a {
     box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2); }
 
   .main {
-    height: calc(100vh - 3rem);
+    height: calc(100vh);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -708,7 +708,7 @@ a {
       text-align: center; }
 
   #Hero {
-    height: calc(100vh - 3rem); }
+    height: calc(100vh); }
     #Hero .kicker {
       align-self: center;
       padding-top: 8rem;
@@ -729,21 +729,21 @@ a {
       padding: 0 0.3rem 0 0.3rem; }
 
   #A {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/bridge.jpg"); }
+    background-image: url("/images/bridge.jpg"); }
 
   #B {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/ocean.jpg"); }
+    background-image: url("/images/ocean.jpg"); }
 
   #C {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/phone.jpg"); }
+    background-image: url("/images/phone.jpg"); }
 
   #D {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/boat.jpg");
+    background-image: url("/images/boat.jpg");
     background-position: center;
     background-color: #DEDEDE; }
 
   #E {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/skyscraper.jpg");
+    background-image: url("/images/skyscraper.jpg");
     background-position: center; }
 
   #Contact {
@@ -767,11 +767,14 @@ a {
     grid-column: 2; }
   #Footer a, #Footer p {
     margin: 0; } }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
   p, span {
     font-size: 1.1rem; }
 
   li {
     font-size: 1.1rem; } }
+@media screen and (max-height: 768px) and (min-width: 768px) {
+  html {
+    font-size: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

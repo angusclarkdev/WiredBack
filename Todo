@@ -1,7 +1,11 @@
-
-1. Change fonts for resize (done)
-2. Add favicon for testing(done)
-3. fix kicker position and sizing (done)
-
-4. strip down 'new horizon text'
-5. fix footer
+1. strip down 'new horizon text'
+2. fix footer
+3. Add google font API (done)
+4. play with font size for small laptops (done)
+5.trial removed header (done)
+6. center mobile contact (done)
+7. add margin to submit button (done)
+8. fix positioning of mail link destination
+9. increase body font weight (done)
+10. fix favicon
+11. Add back to top button 

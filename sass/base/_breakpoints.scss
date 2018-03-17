@@ -32,7 +32,7 @@
 
 
     .main {
-  height: calc(100vh - 3rem);
+  height: calc(100vh);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
     }
 
     #Hero {
-      height: calc(100vh - 3rem);
+      height: calc(100vh);
       .kicker {
         align-self: center;
         padding-top: 8rem;
@@ -120,21 +120,21 @@
 
   }
   #A {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/bridge.jpg");
+    background-image: url("/images/bridge.jpg");
   }
   #B {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/ocean.jpg");
+    background-image: url("/images/ocean.jpg");
   }
   #C {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/phone.jpg");
+    background-image: url("/images/phone.jpg");
   }
   #D {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/boat.jpg");
+    background-image: url("/images/boat.jpg");
     background-position: center;
     background-color: $grey;
   }
   #E {
-    background-image: url("https://github.com/angusclarkdev/WiredBack/images/skyscraper.jpg");
+    background-image: url("/images/skyscraper.jpg");
     background-position: center;
 
   }
@@ -168,7 +168,7 @@ a , p {
 }
 }
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1400px) {
 
       p, span {
         font-size: 1.1rem;
@@ -177,9 +177,9 @@ a , p {
         font-size: 1.1rem;
       }
 }
-    @media screen and (max-height: 700px) and (min-width: 768px) {
+    @media screen and (max-height: 768px) and (min-width: 768px) {
 
       html {
-      //  font-size: 14px;
+       font-size: 15px;
       }
 }
