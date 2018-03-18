@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
 
     // Smooth Scrolling
-    // Mobile scrolling 
+    // Mobile scrolling
 
     let scroll = $('.scroll');
     let scrollSlow = $('.scroll_slow');
@@ -79,5 +79,14 @@ $(document).ready(function() {
       }, 1)
     });
 
+// Form validation
+
+$('[type="submit"]').on('click', function () {
+    // add required class to matched elements
+    $(this)
+        .closest('form')
+        .find('[required]')
+        .addClass('required');
+});
   }());
 });

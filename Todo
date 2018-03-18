@@ -1,12 +1,5 @@
-
-2. fix footer
-3. Add google font API (done)
-4. play with font size for small laptops (done)
-5.trial removed header (done)
-6. center mobile contact (done)
-7. add margin to submit button (done)
-8. fix mobile nav links (done)
-9. increase body font weight (done)
-10. fix favicon (done)
-11. Add recaptcha
-12. Remember to change index.html to php 
+1. Add recaptcha (done)
+2. Add form validation (done)
+3. fix footer
+4. fix mobile nav links (done)
+5. Remember to change index.html to php

@@ -501,6 +501,10 @@ textarea {
   input[type="email"]:focus,
   textarea:focus {
     border: 1px solid #F2BE00; }
+  input[type="text"].required:invalid,
+  input[type="email"].required:invalid,
+  textarea.required:invalid {
+    border: 1px solid red; }
 
 #message {
   min-height: 150px;
@@ -584,7 +588,7 @@ textarea {
   width: 120px;
   height: 40px;
   border: none;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   border-radius: 3px;
   background-color: #F5F5F5;
   font-size: inherit;

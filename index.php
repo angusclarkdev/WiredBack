@@ -18,6 +18,8 @@
 
 
   <title>WiredBack Insurance Intermediary, FCA, London </title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -79,16 +81,16 @@
         a range of specialist insurance solutions for large, state led infrastructure investment programmes.</p>
 
     </div>
-    <img class="image" src="images/horizon.jpg" alt=" ">
+    <img class="image" src="images/horizon.jpg" alt="">
 
     <a href="#C" class="arrow scroll" alt="Go to next section"></a>
 
-    <!-- <a href="C " class="arrow"> <img src="# " alt=" "></a> -->
+    <!-- <a href="C" class="arrow"> <img src="#" alt=""></a> -->
   </section>
   <!-- Section C -->
   <section id="C" class="grid main right">
-    <div class="box box_right ">
-      <h3 class="subtitle ">Connectivity</h3>
+    <div class="box box_right">
+      <h3 class="subtitle">Connectivity</h3>
 
       <p class="content"> We offer our clients a fully regulated digital distribution platform with European Economic Area (EEA) passport permissions, sourcing a range of business and management liability products such as Cyber Liability, Crime and Fraud, Professional Indemnity
         and Directors and Officers Liability to our broad distribution network of affinity partners, associations and brokers. Distributed computing and data analytics, combined with machine learning algortithms, is providing the capability for personalised
@@ -97,15 +99,15 @@
 
       </p>
       <!--  <i class="content expand_arrow right_arrow fas fa-arrow-circle-left"></i> -->
-      <img class="image " src="images/phone.jpg " alt=" ">
+      <img class="image" src="images/phone.jpg" alt="">
     </div>
     <a href="#D" class="arrow scroll" alt="Go to next section"></a>
-    <!--    <a href="D " class="arrow "> <img src="# " alt=" "></a> -->
+    <!--    <a href="D" class="arrow"> <img src="#" alt=""></a> -->
   </section>
   <!-- Section D -->
   <section id="D" class="grid main left">
     <div class="box box_left">
-      <h3 class="subtitle center ">Transaction Mercantile</h3>
+      <h3 class="subtitle center">Transaction Mercantile</h3>
       <p class="content">TML is a funding structure which is capable of financing virtually any project where there are clearly identified future cash flows. This financing approach takes a future contract obligation to pay and:</p>
       <ul>
         <li>Establishes an underlying commercial structure between Buyer and Supplier</li>
@@ -114,7 +116,7 @@
       </ul>
 
     </div>
-    <img class="image" src="images/tankermob.jpg" alt=" ">
+    <img class="image" src="images/tankermob.jpg" alt="">
     <a href="#E" class="arrow scroll" alt="Go to next section"></a>
   </section>
   <section id="E" class="grid main right">
@@ -129,33 +131,39 @@
   <section id="Contact" class="grid main">
     <div class="box box_center">
       <h3 class="subtitle">Contact Us</h3>
-      <form id="contact_form" class="" action="formContact.php" method="post">
-        <input id="name" type="text" name="name" placeholder="Name:">
-        <input id="email" type="email" name="email" placeholder="Email:">
+      <form id="contact_form" class="" action="form.php" method="post">
+
+        <input id="name" type="text" name="name" required  placeholder="Name:">
+        <input id="email" type="email" name="email" required placeholder="Email:">
         <!--<input id="subject" type="text" name="subject" placeholder="Subject:"> -->
-        <textarea id="message" type="text" name="message" placeholder="Message:"></textarea>
+        <textarea id="message" type="text" name="message" required placeholder="Message:"></textarea>
+        <!--<div class="g-recaptcha" data-sitekey="6LdlX00UAAAAAD8afXr0JiI97smftiCohNm1HdYd"></div> -->
         <button class="button" type="submit" name="submit">Send</button>
+
+
+
+
       </form>
 
     </div>
   </section>
   <!-- Footer -->
   <section id="Footer" class="footer main footer_grid">
-    <i class="fas fa-phone-square phone fa-rotate-90 "></i>
-    <a href="tel:44-207-193-9896 "> +44(0)207-193-9896</a>
-    <i class="far fa-envelope "></i>
+    <i class="fas fa-phone-square phone fa-rotate-90"></i>
+    <a href="tel:44-207-193-9896"> +44(0)207-193-9896</a>
+    <i class="far fa-envelope"></i>
     <p class="more">Find out more</p>
-    <i class="far fa-building "></i>
+    <i class="far fa-building"></i>
     <p class="address">17 Clarendon Street London SW1V 2EN</p>
-    <!--  <a href="#Hero "> <img src="# " alt=" ">Top</a> -->
-    <p class="copyright ">© Wiredback Limited, FCA Registration Number: 525404</p>
+    <!--  <a href="#Hero"> <img src="#" alt="">Top</a> -->
+    <p class="copyright">© Wiredback Limited, FCA Registration Number: 525404</p>
   </section>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js ">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
 </script>
-<script type="text/javascript " src="js/main.js ">
+<script type="text/javascript" src="js/main.js">
 </script>
-<script type="text/javascript " src="js/jquery.scrollex.js ">
+<script type="text/javascript" src="js/jquery.scrollex.js">
 </script>
 
 </html>
