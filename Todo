@@ -5,7 +5,8 @@
 5.trial removed header (done)
 6. center mobile contact (done)
 7. add margin to submit button (done)
-8. fix positioning of mail link destination
+8. fix mobile nav links (done)
 9. increase body font weight (done)
 10. fix favicon (done)
-11. Add back to top button
+11. Add recaptcha
+12. Remember to change index.html to php 

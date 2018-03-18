@@ -14,7 +14,7 @@
   opacity: 0.1;
   }
 }
-.down_arrow {
+.arrow {
   display: none;
   grid-column: 2/3;
   align-self: flex-end;
@@ -32,6 +32,9 @@
   &:hover {
     background-color: rgba(76,	76	,76, 0.5);
   }
+}
+.up_arrow {
+  
 }
 
 .round_arrow {

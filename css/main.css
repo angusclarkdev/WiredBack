@@ -553,7 +553,7 @@ textarea {
 .opacity::before {
   opacity: 0.1; }
 
-.down_arrow {
+.arrow {
   display: none;
   grid-column: 2/3;
   align-self: flex-end;
@@ -568,7 +568,7 @@ textarea {
   background-repeat: no-repeat;
   background-color: transparent;
   transition: all 0.3s ease; }
-  .down_arrow:hover {
+  .arrow:hover {
     background-color: rgba(76, 76, 76, 0.5); }
 
 .round_arrow {
@@ -610,7 +610,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "source sans pro", Helvetica, Arial, sans-serif;
+  font-family: "source sans pro", Helvetica, Arial sans-serif;
   font-weight: 400;
   text-align: center;
   position: relative;
@@ -694,7 +694,10 @@ a {
   .expand_arrow {
     display: inline-block; }
 
-  .down_arrow {
+  .arrow {
+    display: block; }
+
+  .up_arrow {
     display: block; }
 
   .box_right {

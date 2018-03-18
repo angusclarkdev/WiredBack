@@ -70,7 +70,11 @@
     .expand_arrow {
       display: inline-block;
     }
-    .down_arrow {
+    .arrow {
+      display: block;
+    }
+
+    .up_arrow {
       display: block;
     }
     .box_right {
