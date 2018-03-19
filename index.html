@@ -10,7 +10,7 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <!-- Main font -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 
@@ -18,7 +18,6 @@
 
 
   <title>WiredBack Insurance Intermediary, FCA, London </title>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
@@ -62,8 +61,7 @@
         a technological revolution that is forcing us all to re-examine our exposure to risk. Individuals, businesses and institutions across the globe are having to design and create new strategies - <i>new ways of doing</i> - if they are to adapt to
         the new world order of big data and digital connectivity. </p>
 
-      <!--<i class="content expand_arrow right_arrow fas fa-arrow-circle-left"></i> -->
-      <!--<i class="cross content expand_arrow far fa-times-circle"></i> -->
+
 
       <img class="image" src="/images/bridge.jpg" alt="">
 
@@ -81,7 +79,7 @@
         a range of specialist insurance solutions for large, state led infrastructure investment programmes.</p>
 
     </div>
-    <img class="image" src="images/horizon.jpg" alt="">
+    <img class="image" src="/images/ocean.jpg" alt="">
 
     <a href="#C" class="arrow scroll" alt="Go to next section"></a>
 
@@ -99,7 +97,7 @@
 
       </p>
       <!--  <i class="content expand_arrow right_arrow fas fa-arrow-circle-left"></i> -->
-      <img class="image" src="images/phone.jpg" alt="">
+      <img class="image" src="/images/phone.jpg" alt="">
     </div>
     <a href="#D" class="arrow scroll" alt="Go to next section"></a>
     <!--    <a href="D" class="arrow"> <img src="#" alt=""></a> -->
@@ -116,7 +114,7 @@
       </ul>
 
     </div>
-    <img class="image" src="images/tankermob.jpg" alt="">
+    <img class="image" src="/images/boat.jpg" alt="">
     <a href="#E" class="arrow scroll" alt="Go to next section"></a>
   </section>
   <section id="E" class="grid main right">
@@ -131,17 +129,21 @@
   <section id="Contact" class="grid main">
     <div class="box box_center">
       <h3 class="subtitle">Contact Us</h3>
-      <form id="contact_form" class="" action="form.php" method="post">
+      <form id="contact_form" action="form.php" method="post">
 
-        <input id="name" type="text" name="name" required  placeholder="Name:">
-        <input id="email" type="email" name="email" required placeholder="Email:">
-        <!--<input id="subject" type="text" name="subject" placeholder="Subject:"> -->
-        <textarea id="message" type="text" name="message" required placeholder="Message:"></textarea>
-        <!--<div class="g-recaptcha" data-sitekey="6LdlX00UAAAAAD8afXr0JiI97smftiCohNm1HdYd"></div> -->
+        <input id="name" type="text" name="name" required maxlength="50" placeholder="Name:">
+        <input id="email" type="email" name="email" required maxlength="50" placeholder="Email:">
+        <textarea id="message" type="text" name="message" required maxlength="6000" placeholder="Message:"></textarea>
+        <div id="recaptcha">
+          <div class="g-recaptcha" data-sitekey="6LdlX00UAAAAAD8afXr0JiI97smftiCohNm1HdYd"></div>
+
+        </div>
+
         <button class="button" type="submit" name="submit">Send</button>
 
 
-
+        <div id="error_message" style="width:100%; height:100%; display:none; ">
+          <h3>Error</h3> Sorry there was an error sending your form. </div>
 
       </form>
 
@@ -165,5 +167,6 @@
 </script>
 <script type="text/javascript" src="js/jquery.scrollex.js">
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </html>

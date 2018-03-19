@@ -88,9 +88,6 @@
       text-align: left;
       display: block;
       border-bottom: none;
-      &.center {
-        text-align: center;
-      }
     }
 
     #Hero {
@@ -188,4 +185,26 @@ a , p {
       html {
        font-size: 15px;
       }
+
+
+
+
+      .box_center {
+        padding: 0;
+        height: 500px;
+
+      }
+
+
+
+h3 {
+  margin-top: 0;
 }
+      #message {
+        min-height: 0;
+        height: 60px;
+      }
+      .recaptcha {
+        float: left;
+      }
+    }

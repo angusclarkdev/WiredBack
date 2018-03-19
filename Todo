@@ -1,5 +1,9 @@
-1. Add recaptcha (done)
-2. Add form validation (done)
-3. fix footer
-4. fix mobile nav links (done)
-5. Remember to change index.html to php
+- Add working form  (done)
+- Fix email output, make it readable (done)
+- Accessibility: tab to top of sections
+- Optimize image sizes
+- fix footer
+- fix mobile nav links (done)
+- Remember to change index.html to php
+- write javascript to only show recaptcha when all values are entered
+- fix contact form sizing (done)
