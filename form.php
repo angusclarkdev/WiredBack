@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
@@ -6,7 +7,7 @@ set_error_handler("var_dump");
     function post_captcha($user_response) {
         $fields_string = '';
         $fields = array(
-            'secret' => '6LdlX00UAAAAAJkIsbWtYKDoJt1tJ8kYb_XOTxIu',
+            'secret' => '6Lf7jk0UAAAAAOdSxUtcyNf0nuM7lzw0sx3LU3RZ',
             'response' => $user_response
         );
         foreach($fields as $key=>$value)
@@ -30,7 +31,7 @@ set_error_handler("var_dump");
 
     if (!$res['success']) {
         // What happens when the CAPTCHA wasn't checked
-        echo '<p>Please go back and make sure you check the security CAPTCHA box.</p><br>';
+        echo '<h2>Please go back and make sure you check the security CAPTCHA box.</h2><br>';
     } else {
         // If CAPTCHA is successfully completed...
 
@@ -39,8 +40,8 @@ set_error_handler("var_dump");
         $message = $_POST['message'];
         $subject = '';
 
-        $mailTo = "garry@wiredback.com";
-
+        $mailTo = "angusclark93@gmail.com"; //  Even gmail works!
+        $server = "test@angusclark.me";
 
         $emailBody = "Name: $name.\n \n".
 
@@ -50,11 +51,12 @@ set_error_handler("var_dump");
 
 
 
-        $header = "From: ".$mailTo;
+        $headers = "From: ".$server;  // 'From' needs to be an email address registered
 
 
 
-        mail($mailTo, $subject, $emailBody, $header);
+
+        mail($mailTo, $subject, $emailBody, $headers);
 
         echo '<br><p>Thanks for the inquiry. We\'ll get back to you soon. </p><br>';
     }

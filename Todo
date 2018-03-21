@@ -1,9 +1,9 @@
 - Add working form  (done)
 - Fix email output, make it readable (done)
 - Accessibility: tab to top of sections
-- Optimize image sizes
+- Optimize image sizes (done)
 - fix footer
 - fix mobile nav links (done)
-- Remember to change index.html to php
-- write javascript to only show recaptcha when all values are entered
 - fix contact form sizing (done)
+- mimify css (done)
+- pretty url for form page

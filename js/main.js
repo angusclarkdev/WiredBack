@@ -88,5 +88,8 @@ $('[type="submit"]').on('click', function () {
         .find('[required]')
         .addClass('required');
 });
+
+// Show recaptcha
+
   }());
 });
