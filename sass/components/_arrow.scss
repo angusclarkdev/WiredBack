@@ -16,9 +16,13 @@
 }
 .arrow {
   display: none;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  align-self: flex-end;
-  justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
   height: 4.5rem;
   width: 5.5rem;
   border: 2px solid #e5e6e7;
@@ -28,20 +32,24 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   &:hover {
     background-color: rgba(76,	76	,76, 0.5);
   }
 }
 .up_arrow {
-  
+
 }
 
 .round_arrow {
+  -ms-grid-row: 1;
   grid-row: 1;
   height: 100px;
   width: 100px;
   border-radius: 50px;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border: 2px solid #e5e6e7;
 }
