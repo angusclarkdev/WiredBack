@@ -19,28 +19,32 @@ $(document).ready(function() {
       }
     });
 
-    let rightArrow = $('.right_arrow');
-    let leftArrow = $('.left_arrow')
 
-    rightArrow.hover(function() {
-      $(this).addClass('opacity')
-      $('.box_right').addClass('transform_x');
-    })
+    /*
+        let rightArrow = $('.right_arrow');
+        let leftArrow = $('.left_arrow')
 
-    $('.box').mouseleave(function(event) {
-      $('.box_right').removeClass('transform_x');
-      rightArrow.removeClass('opacity')
-    });
+        rightArrow.hover(function() {
+          $(this).addClass('opacity')
+          $('.box_right').addClass('transform_x');
+        })
 
-    leftArrow.hover(function() {
-      $(this).addClass('opacity')
-      $('#box_right1').addClass('transform_x');
-    })
+        $('.box').mouseleave(function(event) {
+          $('.box_right').removeClass('transform_x');
+          rightArrow.removeClass('opacity')
+        });
 
-    $('.box').mouseleave(function(event) {
-      $('#box_right1').removeClass('transform_x');
-      leftArrow.removeClass('opacity')
-    });
+        leftArrow.hover(function() {
+          $(this).addClass('opacity')
+          $('#box_right1').addClass('transform_x');
+        })
+
+        $('.box').mouseleave(function(event) {
+          $('#box_right1').removeClass('transform_x');
+          leftArrow.removeClass('opacity')
+        });
+
+        */
 
     // Smooth Scrolling
     // Mobile scrolling
@@ -79,17 +83,17 @@ $(document).ready(function() {
       }, 1)
     });
 
-// Form validation
+    // Form validation
 
-$('[type="submit"]').on('click', function () {
-    // add required class to matched elements
-    $(this)
+    $('[type="submit"]').on('click', function() {
+      // add required class to matched elements
+      $(this)
         .closest('form')
         .find('[required]')
         .addClass('required');
-});
+    });
 
-// Show recaptcha
+    // Show recaptcha
 
   }());
 });

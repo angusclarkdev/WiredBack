@@ -107,7 +107,7 @@
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
-        padding-top: 8rem;
+        padding-top: 6rem;
         -ms-grid-row: 1;
         -ms-grid-row-span: 1;
         grid-row: 1/2;
@@ -139,7 +139,7 @@
 
   }
   #A {
-    background-image: url("/images/bridge.jpg");
+    background-image: url("/images/leadenhall.jpg");
   }
   #B {
     background-image: url("/images/ocean.jpg");
@@ -166,8 +166,7 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 2fr;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
@@ -229,4 +228,11 @@ h3 {
         min-height: 0;
         height: 60px;
       }
+      #Footer a {
+
+        align-self: flex-end;
+  }
+  .footer_logo {
+    margin-top: 1rem;
+  }
     }
