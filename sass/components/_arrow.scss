@@ -23,8 +23,8 @@
       align-self: flex-end;
   -ms-grid-column-align: center;
       justify-self: center;
-  height: 4.5rem;
-  width: 5.5rem;
+      height: 100px;
+      width: 100px;
   border: 2px solid #e5e6e7;
   border-bottom: none;
   border-radius: 3rem 3rem 0 0;
@@ -39,15 +39,11 @@
     background-color: rgba(76,	76	,76, 0.5);
   }
 }
-.up_arrow {
 
-}
 
 .round_arrow {
   -ms-grid-row: 1;
   grid-row: 1;
-  height: 100px;
-  width: 100px;
   border-radius: 50px;
   -ms-flex-item-align: end;
       align-self: flex-end;

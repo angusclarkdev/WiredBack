@@ -4,11 +4,17 @@
   top: 0;
   width: 99.5%;
   background-color: $grey;
-  //margin: 0 0.2rem 0 0.2rem;
   font-size: 1.4em;
   z-index: 1;
   opacity: 0.9;
   line-height: 1.5;
+  @include min-width(992px) {
+    display: none;
+      font-size: 1rem;
+      background-color: white;
+      width: 100%;
+      margin: 0;
+  }
 
   nav {
   height: inherit;
@@ -30,6 +36,7 @@
   ul {
   text-align: right;
   margin: inherit;
+  }
 
   a {
     text-decoration: none;
@@ -41,7 +48,7 @@
       }
     }
   }
-  }
+
   i {
 
   color: white;

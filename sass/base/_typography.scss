@@ -14,14 +14,32 @@ h1, h2, h3, h4 {
 p {
   margin:  0;
   text-align: justify;
+  @include min-width(1400px) {
+    font-size: 1.1rem;
+  }
 
 }
 h2 {
   font-size: 0.6em;
+  @include min-width(768px) {
+  font-size: 1.2rem;
+  }
+  @include min-width(992px) {
+  font-size: 1.6rem;
+  }
   color: white;
   margin-top: 0.5rem;
 }
 h3 {
   display: inline-block;
   border-bottom: 1px solid $grey;
+  @include min-width(992px) {
+  font-size: 2.5rem;
+  text-align: left;
+  display: block;
+  border-bottom: none;
+  @include maxmin(720px, 768px){
+    margin-top: 0;
+  }
+  }
 }

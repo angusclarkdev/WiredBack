@@ -1,9 +1,10 @@
 // Base
 
-
+@import "base/mixins.scss";
 @import "base/typography.scss";
 @import "base/variables.scss";
 @import "base/normalize.scss";
+
 
  // Layout
 
@@ -28,6 +29,12 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 16px;
+  @include min-width(768px) {
+    font-size: 18px;
+  }
+  @include maxmin(720px, 768px) {
+    font-size: 16px;
+  }
   overflow-x: hidden;
   box-sizing: border-box;
 
@@ -63,17 +70,14 @@ li {
   margin: 0;
   list-style: none;
   display: inline-block;
-
+  @include min-width(992px) {
+  font-size: 1.1rem;
+  }
 }
 a {
-
   color: inherit;
 }
 .image {
   width: 95%;
   padding-bottom: 1rem;
 }
-
-// Breakpoints
-
-@import "base/breakpoints.scss";

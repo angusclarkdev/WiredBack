@@ -1,4 +1,7 @@
 #Contact {
+  @include min-width(992px){
+      background-color: $grey;
+  }
   h3 {
     text-align: center;
   }
@@ -77,6 +80,10 @@ textarea {
 #message {
   min-height: 150px;
   padding-top: 1rem;
+  @include maxmin(720px, 768px){
+    min-height: 0;
+    height: 60px;
+  }
 }
 .submitted {
   color: red;

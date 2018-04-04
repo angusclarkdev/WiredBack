@@ -2,8 +2,59 @@
   margin: 0 0.2rem 0 0.2rem;
   border-top: 1px solid rgba(128, 128, 128, 0.4);
   background-color: white;
+  @include min-width(992px) {
+  height: calc(100vh);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  &.inactive.left > .box {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
+  &.inactive.right > .box {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  }
+  }
+
+  @include min-width(992px){
+    .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 100px;
+        grid-template-rows: 1fr 100px;
+  }
+}
+
+@include min-width(992px){
+  #A {
+    background-image: url("/images/leadenhall.jpg");
+  }
+  #B {
+    background-image: url("/images/ocean.jpg");
+  }
+  #C {
+    background-image: url("/images/phone.jpg");
+  }
+  #D {
+    background-image: url("/images/boat.jpg");
+    background-position: center;
+    background-color: $grey;
+
+  }
+  #E {
+    background-image: url("/images/skyscraper.jpg");
+    background-position: center;
+
+  }
+}
 #D {
   ul {
     -webkit-padding-start: 40px;

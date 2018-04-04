@@ -1,19 +1,56 @@
 #Footer {
-
+@include min-width(992px){
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 2fr;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  justify-items: center;
+  height: 30vh;
+  text-align: left;
+}
   p {
     margin: 1rem 0 1rem 0;
     text-align: center;
+    @include min-width(992px) {
+      -ms-grid-row: 2;
+      grid-row: 2;
+      padding: 0;
+    }
+    &.copyright {
+      font-size: 0.8rem;
+      margin: 0;
+      padding-bottom: 0.5rem;
+      -ms-grid-row: 4;
+      grid-row: 4;
+      -ms-grid-column: 2;
+      grid-column: 2;
+        margin: 0;
+    }
   }
   a {
     display: block;
     margin: 1rem;
     margin-bottom: 0;
     color: $blue;
+    @include min-width(992px){
+      grid-column: 2;
+      align-self: flex-start;
+    }
+    @include maxmin(720px, 768px){
+      align-self: flex-end;
+    }
   }
   i {
     display: block;
     color: $light-mustard;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    @include min-width(992px){
+      grid-column: 2;
+    }
   }
   .phone {
     margin-top: 2rem;
@@ -21,12 +58,14 @@
   .envelope {
     cursor: pointer;
   }
-  .copyright {
-    font-size: 0.8rem;
-    margin: 0;
-    padding-bottom: 0.5rem;
-  }
   .footer_logo {
     width: 50%;
+    @include min-width(992px){
+      grid-column: 2;
+      grid-row: 3;
+    }
+    @include maxmin(720px, 768px){
+      margin-top: 1rem;
+    }
   }
 }
