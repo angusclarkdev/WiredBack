@@ -35,22 +35,22 @@
 
 @include min-width(992px){
   #A {
-    background-image: url("/images/leadenhall.jpg");
+    background-image: url("../images/leadenhall.jpg");
   }
   #B {
-    background-image: url("/images/ocean.jpg");
+    background-image: url("../images/ocean.jpg");
   }
   #C {
-    background-image: url("/images/phone.jpg");
+    background-image: url("../images/phone.jpg");
   }
   #D {
-    background-image: url("/images/boat.jpg");
+    background-image: url("../images/boat.jpg");
     background-position: center;
     background-color: $grey;
 
   }
   #E {
-    background-image: url("/images/skyscraper.jpg");
+    background-image: url("../images/skyscraper.jpg");
     background-position: center;
 
   }
