@@ -9,11 +9,11 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  width: 70%;
+  width: 60%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+  padding: 1.8rem;//padding: 1.6rem 1.6rem 1.6rem 1.6rem;
   -webkit-box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2);
 
@@ -27,7 +27,10 @@
   grid-column: 1/-1;
   @include maxmin(720px, 768px){
     padding: 0;
-    height: 520px;
+    height: 550px;
+  }
+  @include min-width(992px) {
+    width: 70%;
   }
 }
 .box_right {
@@ -47,7 +50,7 @@
 
 p {
   text-align: center;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1.2rem 1.2rem 1.2rem;
   @include min-width(768px) {
     text-align: justify;
   }

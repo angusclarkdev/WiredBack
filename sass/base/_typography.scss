@@ -1,5 +1,6 @@
 
 @import "_variables.scss";
+@import "mixins.scss";
 // Fonts
 
 $body: 'source sans pro', Helvetica, Arial sans-serif;
@@ -15,7 +16,7 @@ p {
   margin:  0;
   text-align: justify;
   @include min-width(1400px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 }

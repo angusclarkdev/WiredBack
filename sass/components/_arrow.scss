@@ -1,4 +1,3 @@
-
 .expand_arrow {
   display: none;
   font-size: 3rem;
@@ -38,6 +37,14 @@
   &:hover {
     background-color: rgba(76,	76	,76, 0.5);
   }
+    @include min-width(992px) {
+  display: block;
+}
+}
+
+.arrow_2 {
+  border: 2px solid #A0A1A1;
+  
 }
 
 
