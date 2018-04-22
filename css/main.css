@@ -771,7 +771,7 @@ p {
   border: 2px solid #e5e6e7;
   border-bottom: none;
   border-radius: 3rem 3rem 0 0;
-  background-image: url("/images/dark-arrow.svg");
+  background-image: url("images/dark-arrow.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;
