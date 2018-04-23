@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $('.main').scrollex({
       mode: 'middle',
-      delay: 300,
+      delay: 100,
       initialize: function() {
         $(this).addClass('inactive');
       },

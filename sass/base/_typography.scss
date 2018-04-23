@@ -18,7 +18,9 @@ p {
   @include min-width(1400px) {
     font-size: 1.1rem;
   }
-
+    @include maxmin(720px, 992px){
+font-size: 14px;
+}
 }
 h2 {
   font-size: 0.6em;
@@ -39,8 +41,9 @@ h3 {
   text-align: left;
   display: block;
   border-bottom: none;
-  @include maxmin(720px, 768px){
-    margin-top: 0;
+}
+  @include maxmin(720px, 992px){
+    margin-top: 1rem;
   }
-  }
+
 }

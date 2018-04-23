@@ -2,9 +2,9 @@
 
   position: relative;
   background-color: white;
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
   @include min-width(992px){
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -48,7 +48,9 @@
   }
 }
 .box_sml {
+  @include min-width(992px) {
   width: 50%;
+  }
 }
 
 p {

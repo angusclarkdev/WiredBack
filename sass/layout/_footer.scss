@@ -36,6 +36,7 @@
     margin: 1rem;
     margin-bottom: 0;
     color: $blue;
+    border-bottom: none;
     @include min-width(992px){
       grid-column: 2;
       align-self: flex-start;
