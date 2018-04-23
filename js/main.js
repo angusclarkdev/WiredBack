@@ -20,32 +20,6 @@ $(document).ready(function() {
     });
 
 
-    /*
-        let rightArrow = $('.right_arrow');
-        let leftArrow = $('.left_arrow')
-
-        rightArrow.hover(function() {
-          $(this).addClass('opacity')
-          $('.box_right').addClass('transform_x');
-        })
-
-        $('.box').mouseleave(function(event) {
-          $('.box_right').removeClass('transform_x');
-          rightArrow.removeClass('opacity')
-        });
-
-        leftArrow.hover(function() {
-          $(this).addClass('opacity')
-          $('#box_right1').addClass('transform_x');
-        })
-
-        $('.box').mouseleave(function(event) {
-          $('#box_right1').removeClass('transform_x');
-          leftArrow.removeClass('opacity')
-        });
-
-        */
-
     // Smooth Scrolling
     // Mobile scrolling
 

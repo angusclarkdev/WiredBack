@@ -1,8 +1,8 @@
 
 @import "_variables.scss";
 @import "mixins.scss";
-// Fonts
 
+// Fonts
 $body: 'source sans pro', Helvetica, Arial sans-serif;
 
 h1, h2, h3, h4 {
@@ -18,9 +18,9 @@ p {
   @include min-width(1400px) {
     font-size: 1.1rem;
   }
-    @include maxmin(720px, 992px){
-font-size: 14px;
-}
+  @include maxmin(720px, 992px){
+    font-size: 14px;
+  }
 }
 h2 {
   font-size: 0.6em;
@@ -45,5 +45,4 @@ h3 {
   @include maxmin(720px, 992px){
     margin-top: 1rem;
   }
-
 }

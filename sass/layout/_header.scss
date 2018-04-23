@@ -10,12 +10,11 @@
   line-height: 1.5;
   @include min-width(992px) {
     display: none;
-      font-size: 1rem;
-      background-color: white;
-      width: 100%;
-      margin: 0;
+    font-size: 1rem;
+    background-color: white;
+    width: 100%;
+    margin: 0;
   }
-
   nav {
   height: inherit;
   display: -webkit-box;
@@ -23,11 +22,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: inherit;
   width: inherit;
 
@@ -38,16 +37,13 @@
   margin: inherit;
   }
 
-  a {
-    text-decoration: none;
-
     &.hidden_li {
       display: none;
       :active {
         color: $blue;
       }
     }
-  }
+  
 
   i {
 

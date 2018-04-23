@@ -38,8 +38,6 @@ ini_set('display_errors', 'On');
 
         // Verify data
 
-
-
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (empty($_POST["name"]) && empty($_POST["email"]) && empty($_POST["message"])) {  // If field is empty
@@ -66,8 +64,8 @@ ini_set('display_errors', 'On');
 
 
 
-        $mailTo = "angusclark93@gmail.com"; //  Even gmail works!
-        $server = "test@angusclark.me";
+        $mailTo = "";
+        $server = "";
 
         if (preg_match("(\r|\n)i",$server)) {
 
@@ -82,7 +80,6 @@ ini_set('display_errors', 'On');
 
 
         $headers = "From: ".$server;  // 'From' needs to be an email address registered
-
 
 
 

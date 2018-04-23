@@ -71,12 +71,11 @@ textarea {
   height: 3rem;
   &:focus {
     border: 1px solid $light_mustard;
-  }
+    }
   &.required:invalid {
   border: 1px solid red;
+    }
   }
-  }
-
 #message {
   min-height: 150px;
   padding-top: 1rem;
