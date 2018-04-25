@@ -1,17 +1,3 @@
-.expand_arrow {
-  display: none;
-  font-size: 3rem;
-  text-align: left;
-  margin-top: 1rem;
-  width: 60px;
-  background-color: white;
-
-}
-.opacity {
-  &::before {
-  opacity: 0.1;
-  }
-}
 .arrow {
   display: none;
   -ms-grid-column: 2;
