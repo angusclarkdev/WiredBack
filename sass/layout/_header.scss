@@ -29,7 +29,6 @@
   justify-content: center;
   margin: inherit;
   width: inherit;
-
   }
 
   ul {
@@ -37,28 +36,25 @@
   margin: inherit;
   }
 
-    &.hidden_li {
-      display: none;
-      :active {
-        color: $blue;
-      }
-    }
-  
 
   i {
 
   color: white;
   text-shadow: 0px 1px 1px black;
+
   }
 li {
   height: 100%;
   display: inline-block;
-  padding: 0 0.3rem 0 0.3rem;
+  padding: 0 0.6rem 0 0.6rem;
   &.nav_icon {
     background-color: $light-mustard;
 
   }
 
   }
-
+  a {
+    padding: 0 0.3rem;
+    border-bottom: none;
+  }
 }
