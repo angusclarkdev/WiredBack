@@ -7,7 +7,7 @@ ini_set('display_errors', 'On');
     function post_captcha($user_response) {
         $fields_string = '';
         $fields = array(
-            'secret' => '6Lf7jk0UAAAAAOdSxUtcyNf0nuM7lzw0sx3LU3RZ',
+            'secret' => '6LcTX00UAAAAAIvFL2JUUjs8pRraQdlTlM32VQ_e',
             'response' => $user_response
         );
         foreach($fields as $key=>$value)
@@ -64,8 +64,8 @@ ini_set('display_errors', 'On');
 
 
 
-        $mailTo = "";
-        $server = "";
+        $mailTo = "garry@wiredback.com";
+        $server = "garry@wiredback.com";
 
         if (preg_match("(\r|\n)i",$server)) {
 
