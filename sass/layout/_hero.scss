@@ -3,8 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 45vh;
-  margin-top: 3rem;
+  min-height: 50vh;
   border-top: none;
   position: relative;
   @include min-width(992px) {
@@ -21,8 +20,9 @@
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
    width: 100%;
-   text-shadow: 0px 2px 2px black;
+   text-shadow: 0px 1px 1px black;
    @include min-width(992px) {
+     text-shadow: 0px 2px 2px black;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;

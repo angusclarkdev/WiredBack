@@ -67,7 +67,5 @@ $(document).ready(function() {
         .addClass('required');
     });
 
-    // Show recaptcha
-
   }());
 });

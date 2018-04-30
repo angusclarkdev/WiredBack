@@ -23,8 +23,9 @@ p {
 }
 h2 {
   font-size: 0.7rem;
-  @include min-width(768px) {
-  font-size: 1.2rem;
+
+  @include min-width(375px) {
+  font-size: 1rem;
   }
   @include min-width(992px) {
   font-size: 1.6rem;

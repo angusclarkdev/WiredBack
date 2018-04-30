@@ -57,15 +57,15 @@ ini_set('display_errors', 'On');
                 die();
     }
               $message = test_input($_POST['message']);
-              $subject = "";
+              $subject = "Form Submission";
 
             }
         }
 
 
 
-        $mailTo = "garry@wiredback.com";
-        $server = "garry@wiredback.com";
+        $mailTo = "website@wiredback.com";
+        $server = "website@wiredback.com";
 
         if (preg_match("(\r|\n)i",$server)) {
 

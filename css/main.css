@@ -17,9 +17,9 @@ h2 {
   font-size: 0.7rem;
   color: white;
   margin-top: 0.5rem; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 375px) {
     h2 {
-      font-size: 1.2rem; } }
+      font-size: 1rem; } }
   @media only screen and (min-width: 992px) {
     h2 {
       font-size: 1.6rem; } }
@@ -408,59 +408,12 @@ template {
 [hidden] {
   display: none; }
 
-#Header {
-  height: 3rem;
-  position: fixed;
-  top: 0;
-  width: 99.5%;
-  background-color: #DEDEDE;
-  font-size: 1.4em;
-  z-index: 1;
-  opacity: 0.9;
-  line-height: 1.5; }
-  @media only screen and (min-width: 992px) {
-    #Header {
-      display: none;
-      font-size: 1rem;
-      background-color: white;
-      width: 100%;
-      margin: 0; } }
-  #Header nav {
-    height: inherit;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: inherit;
-    width: inherit; }
-  #Header ul {
-    text-align: right;
-    margin: inherit; }
-  #Header i {
-    color: white;
-    text-shadow: 0px 1px 1px black; }
-  #Header li {
-    height: 100%;
-    display: inline-block;
-    padding: 0 0.6rem 0 0.6rem; }
-    #Header li.nav_icon {
-      background-color: #F2BE00; }
-  #Header a {
-    border-bottom: none; }
-
 #Hero {
   background-image: url("../images/cab1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 45vh;
-  margin-top: 3rem;
+  min-height: 50vh;
   border-top: none;
   position: relative; }
   @media only screen and (min-width: 992px) {
@@ -477,9 +430,10 @@ template {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
-  text-shadow: 0px 2px 2px black; }
+  text-shadow: 0px 1px 1px black; }
   @media only screen and (min-width: 992px) {
     .kicker {
+      text-shadow: 0px 2px 2px black;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
