@@ -410,7 +410,7 @@ template {
   display: none; }
 
 #Hero {
-  background-image: url("../images/skylinen.jpg");
+  background-image: url("../images/cab2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -423,16 +423,19 @@ template {
       margin-top: 0; } }
 
 .kicker {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
   display: inline-block;
   position: absolute;
-  top: 55%;
+  top: 42%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100%; }
+  width: fit-content; }
   @media only screen and (min-width: 992px) {
     .kicker {
+      top: 50%;
       -ms-flex-item-align: flex-start;
       -ms-grid-row-align: center;
       align-self: center;
